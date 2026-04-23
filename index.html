@@ -1,0 +1,193 @@
+<!-- 
+DOCTYPE digunakan untuk memberi tahu browser bahwa dokumen ini menggunakan HTML5 
+Ini penting agar browser merender halaman dengan standar terbaru
+-->
+<!DOCTYPE html>
+
+<!-- 
+Elemen root dari HTML, semua konten harus berada di dalam tag <html>
+Atribut lang="id" (disarankan) untuk memberi tahu bahasa halaman (aksesibilitas & SEO)
+-->
+<html lang="id">
+
+<!-- ===================== BAGIAN HEAD ===================== -->
+<head>
+    <!-- 
+    Metadata dasar halaman web 
+    Tidak ditampilkan langsung ke user, tapi penting untuk browser dan mesin pencari
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO dasar -->
+    <meta name="description" content="Profil Kota Banda Aceh meliputi sejarah, geografis, dan wisata.">
+    <meta name="keywords" content="Banda Aceh, sejarah, wisata, geografis, Aceh">
+    <meta name="author" content="Prodi PTI">
+    <!-- Judul halaman yang tampil di tab browser -->
+    <title>Profil Banda Aceh</title>
+
+    <!-- 
+    Menghubungkan file CSS eksternal 
+    rel="stylesheet" artinya file ini adalah stylesheet
+    href menunjuk lokasi file CSS
+    -->
+    <link rel="stylesheet" type="text/css" href="assets/styles/home.css">
+</head>
+
+<!-- ===================== BAGIAN BODY ===================== -->
+<!-- Semua konten yang terlihat oleh pengguna ada di dalam <body> -->
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<!-- 
+<header> adalah elemen semantic HTML5 
+Digunakan untuk bagian atas halaman, biasanya berisi judul, logo, dan navigasi
+-->
+<header>
+
+    <!-- 
+    div digunakan untuk grouping (pengelompokan)
+    class="jumbotron" biasanya digunakan untuk tampilan hero/banner besar
+    -->
+    <div class="jumbotron">
+        <h1>PUSAT STUDI INOVASI TEKNOLOGI</h1>
+        <!-- paragraf deskripsi -->
+        <p>
+           Fakultas Tarbiyah dan Keguruan 
+        </p>
+    </div>
+
+    <!-- 
+    <nav> adalah elemen semantic untuk navigasi menu
+    -->
+    <nav>
+        <!-- 
+        <ul> = unordered list (list tanpa nomor)
+        Digunakan untuk menu navigasi
+        -->
+        <ul>
+            <!-- 
+            <a href="#sejarah"> berarti link menuju elemen dengan id="sejarah"
+            Ini disebut internal link (anchor link)
+            -->
+            <li><a href="#Beranda">Beranda</a></li>
+            <li><a href="#Profil">Profil</a></li>
+            <li><a href="#Kontak">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ===================== MAIN CONTENT ===================== -->
+<!-- 
+<main> adalah elemen utama isi halaman
+Hanya boleh ada satu <main> dalam satu halaman
+-->
+<main>
+
+    <!-- 
+    div sebagai container utama konten
+    -->
+    <div id="content">
+
+        <!-- ===================== ARTICLE 1 ===================== -->
+        <!-- 
+        <article> digunakan untuk konten mandiri (independen)
+        Cocok untuk artikel, berita, blog, dll
+        -->
+        <article class="card">
+            <h2 id="Beranda">Beranda</h2>
+            <h2 id="visi & Misi">Visi & Misi</h2>
+            <p>Menjadi pusat studi yang unggul dalam pengembangan teknologi pembelajaran di era digital.</p>
+            <p>Kami berfokus pada riset berbasis Outcome-Based Education. membentuk sumber daya manusia yang memiliki daya saing tinggi melalui pendekatan pembelajaran berbasis luaran
+            </p>
+
+            <p>...</p>
+
+        </article>
+
+        <!-- ===================== ARTICLE 2 ===================== -->
+        <article class="card">
+            <h2 id="Profil">Profil</h2>
+            <img src="assets/image/foto pti.png" alt="foto pti" class="featured-image" loading="lazy">
+
+            <p>...</p>
+        </article>
+
+        <!-- ===================== ARTICLE 3 ===================== -->
+        <article class="card">
+            <h2 id="Kontak">Kontak</h2>
+
+            <!-- 
+            <section> digunakan untuk membagi bagian dalam artikel
+            -->
+            <section>
+    
+                <p>WhatsApp : +62 823 3444 2121
+                    <br>Email : 250212082@student.ar-raniry.ac.id
+                </p>
+            </section>
+
+           
+        </article>
+    </div>
+
+    <!-- ===================== SIDEBAR ===================== -->
+    <!-- 
+    <aside> digunakan untuk konten samping (sidebar)
+    Biasanya berisi informasi tambahan
+    -->
+    <aside>
+
+        <!-- article di dalam aside -->
+        <article class="profile card">
+
+            <!-- header dalam article -->
+            <header>
+                <h2>Pengumuman</h2>
+                <ul>
+                    <li>Pendaftaran Asisten</li>
+                    <li>jadwal Pelatihan</li>
+                </ul>
+
+            </header>
+
+            <!-- section untuk info tambahan -->
+           
+        </article>
+    </aside>
+
+    <!-- ===================== SIDEBAR 2 ===================== -->
+    <aside>
+        <article class="profile card">
+            <header>
+                <h2>Ketua Program Studi PTI</h2>
+                <p>Periode 2022 - sekarang </p>
+
+                <figure>
+                    <img src="assets/image/ibu mira kaprodi.jpeg" loading="lazy">
+                    <figcaption>Mira Maisura, M.Sc.</figcaption>
+                </figure>
+            </header>
+        </article>
+    </aside>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<!-- 
+<footer> digunakan untuk bagian bawah halaman
+Biasanya berisi copyright, kontak, dll
+-->
+<footer>
+    <p>Copyright © 2026 - Pusat Studi Inovasi Teknologi</p>
+</footer>
+
+<!-- ===================== JAVASCRIPT ===================== -->
+<!-- 
+Menghubungkan file JavaScript eksternal
+Diletakkan di akhir agar loading HTML lebih cepat
+-->
+<script src="assets/script.js"></script>
+
+</body>
+</html>
